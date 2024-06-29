@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.background {
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+.canvas {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+#grey {
+  background-color: grey;
+}
+#white {
+  background-color: white;
+  color: black;
+}
+#blue {
+  background-color: blue;
+}
+#yellow {
+  background-color: yellow;
+  color: black;
+}
+#red {
+  background-color: red;
+}
+#black {
+  background-color: #212121;
+}
+#purple {
+  background-color: purple;
+}
+#green {
+  background-color: green;
+}
+#orange {
+  background-color: orange;
+}
+#tomato {
+  background-color: #ff6347;
+}
+
+.button:hover#grey,
+.button:hover#white,
+.button:hover#blue,
+.button:hover#yellow,
+.button:hover#red,
+.button:hover#black,
+.button:hover#purple,
+.button:hover#green,
+.button:hover#orange,
+.button:hover#tomato {
+  color: #fff;
+}
